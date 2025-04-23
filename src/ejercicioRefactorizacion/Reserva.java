@@ -1,11 +1,13 @@
 package ejercicioRefactorizacion;
+
+import java.time.LocalDate;
 /**
  * @author Tristán
  */
 public class Reserva {
 	
     private int idPista;
-    private String fecha;
+    private LocalDate fecha;
     private int duracion;
 /**
  * Constructor de reservas
@@ -13,7 +15,7 @@ public class Reserva {
  * @param fecha fecha
  * @param duracion duración
  */
-    public Reserva(int idPista, String fecha, int duracion) {
+    public Reserva(int idPista, LocalDate fecha, int duracion) {
         this.idPista = idPista;
         this.fecha = fecha;
         this.duracion = duracion;
@@ -29,7 +31,7 @@ public class Reserva {
  * Conseguir fecha
  * @return devuelve la fecha
  */
-    public String getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 /**
